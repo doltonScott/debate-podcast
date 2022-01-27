@@ -779,7 +779,7 @@ body {
   width: 450px;
   height: 600px;
   float: right;
-  margin-top: 200px;
+  margin-top: 250px;
   margin-right: 40px;
 }
 
@@ -805,12 +805,16 @@ body {
   margin-top: 20px;
 }
 
+.right-episode-btn {
+  position: absolute;
+}
+
 .sub-btn {
   font-size: 18px;
   background-color: rgb(167, 8, 8);
   color: white;
   font-family: monospace;
-  margin-left: -40px;
+  margin-left: 10px;
   border: none;
   margin-top: 40px;
   padding: 8px 28px;
@@ -825,13 +829,13 @@ body {
   color: white;
   font-family: monospace;
   border: none;
-  margin-top: 93px;
+  margin-top: 145px;
   padding: 8px 25px;
   width: 150px;
   border-radius: 5px;
   cursor: pointer;
   font-weight: 900;
-  margin-left: 1230px;
+  margin-left: 1210px;
 }
 
 .show-btn:hover {
@@ -840,13 +844,13 @@ body {
   color: rgb(167, 8, 8);
   font-family: monospace;
   border: none;
-  margin-top: 100px;
+  margin-top: 145px;
   padding: 8px 25px;
   width: 150px;
   border-radius: 5px;
   cursor: pointer;
   font-weight: 900;
-  margin-left: 1230px;
+  margin-left: 1210px;
 }
 
 .show-btn h5 {
@@ -869,7 +873,7 @@ body {
 input[type="checkbox"] {
   display: none;
 }
-.container-popup {
+.container {
   display: none;
   background: #fff;
   width: 800px;
@@ -931,14 +935,14 @@ form .forgot-pass a {
 form .forgot-pass a:hover {
   text-decoration: underline;
 }
-form .btn {
+form .submit-btn {
   margin: 30px 0;
   height: 45px;
   width: 100%;
   position: relative;
   overflow: hidden;
 }
-form .btn .inner {
+form .submit-btn .inner {
   height: 100%;
   width: 300%;
   position: absolute;
@@ -953,10 +957,10 @@ form .btn .inner {
   );
   transition: all 0.4s;
 }
-form .btn:hover .inner {
+form .submit-btn:hover .inner {
   left: 0;
 }
-form .btn button {
+form .submit-btn button {
   height: 100%;
   width: 100%;
   background: none;
@@ -1140,7 +1144,7 @@ form .signup-link a:hover {
   margin-right: 50px;
 }
 
-.episode-label {
+.episode-labek {
   background-color: rgb(167, 8, 8);
   position: absolute;
   width: 100%;
@@ -1155,8 +1159,8 @@ form .signup-link a:hover {
 
 #bottom-container {
   position: absolute;
-  margin-top: 750px;
-  background: linear-gradient(rgb(167, 8, 8), rgb(63, 1, 1));
+  margin-top: 600px;
+  background: linear-gradient(to top, rgb(167, 8, 8), rgb(0, 0, 0));
   height: 1100px;
   width: 100%;
   margin-left: -2400px;
@@ -1169,13 +1173,16 @@ form .signup-link a:hover {
   margin-top: 100px;
   margin-left: 450px;
   width: 600px;
-  border-radius: 5px;
+  border-radius: 10px;
 }
 .audio-img {
   height: 450px;
   position: absolute;
-  width: 600px;
+  width: 590px;
   border-radius: 5px;
+  margin-left: 5px;
+  margin-top: 7px;
+  border: 2px solid rgb(255, 255, 255);
 }
 
 .fa-play {
@@ -1203,7 +1210,7 @@ form .signup-link a:hover {
 }
 
 .song-slider {
-  margin-top: 600px;
+  margin-top: 700px;
   width: 500px;
 }
 
@@ -1222,7 +1229,8 @@ form .signup-link a:hover {
   -webkit-appearance: none;
   width: 1px;
   height: 20px;
-  box-shadow: -400px 0 0 400px rgb(167, 8, 8), rgb(63, 1, 1);
+  background-color: #111;
+  box-shadow: -400px 0 0 400px rgb(167, 8, 8);
 }
 
 .current-time,
@@ -1341,13 +1349,641 @@ form .signup-link a:hover {
 
 .music-player h1 {
   color: rgb(167, 8, 8);
-  margin-left: 110px;
+  margin-left: 150px;
   position: absolute;
+  margin-top: 70px;
 }
 
 .music-player p {
   color: rgb(167, 8, 8);
   margin-left: 50px;
   position: absolute;
-  margin-top: 70px;
+  margin-top: 150px;
+}
+
+.episode-below {
+  background-color: rgb(167, 8, 8);
+  position: absolute;
+  margin-top: 505px;
+  margin-left: -2400px;
+  width: 100%;
+}
+
+.episode-below h1 {
+  color: white;
+  margin-left: 1100px;
+}
+
+.playlist-container {
+  background-color: rgb(0, 0, 0);
+  position: absolute;
+  margin-left: 1450px;
+  height: 900px;
+  margin-top: 100px;
+  width: 1100px;
+}
+
+.song-container {
+  position: absolute;
+  border: 5px solid white;
+  height: 800px;
+  margin-top: 50px;
+  margin-left: 180px;
+  width: 750px;
+}
+
+.song-container h1 {
+  font-size: 35px;
+  position: absolute;
+  margin-left: 150px;
+}
+
+.song-img {
+  height: 190px;
+  position: absolute;
+  margin-top: 60px;
+  margin-left: 50px;
+  border: 5px solid white;
+}
+
+.song-container p {
+  font-size: 25px;
+  position: absolute;
+  margin-left: 270px;
+  margin-top: 60px;
+}
+
+.song-container h4 {
+  font-size: 25px;
+  position: absolute;
+  margin-left: 270px;
+  margin-top: 100px;
+  color: white;
+}
+
+.song-container h2 {
+  font-size: 25px;
+  position: absolute;
+  margin-left: 270px;
+  margin-top: 220px;
+  color: white;
+}
+
+.song-container h3 {
+  font-size: 25px;
+  position: absolute;
+  margin-left: 270px;
+  margin-top: 180px;
+  color: white;
+}
+
+.play2-btn {
+  margin-left: 20px;
+  height: 50px;
+  width: 50px;
+  position: absolute;
+}
+
+.play2-btn {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgb(0, 0, 0);
+  cursor: pointer;
+}
+
+.play2-btn span {
+  position: absolute;
+  top: 45%;
+  left: 30%;
+  transform: translatey(-50%);
+  width: 5px;
+  height: 15px;
+  border-radius: 2px;
+  background-color: rgb(255, 255, 255);
+  transition: 0.5s;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+.play2-btn span:nth-child(2) {
+  left: 55%;
+  transform-origin: center;
+}
+
+.play2-btn.pause span:nth-child(2) {
+  transform: translateY(-50%) scaleY(0);
+}
+
+.play2-btn.pause span:nth-child(1) {
+  width: 35%;
+  left: 53%;
+  transform: translate(-50%, -50%);
+  border-radius: 0;
+  clip-path: polygon(0 0, 100% 50%, 100% 50%, 0% 100%);
+}
+
+.play-btn2.pause {
+  animation: pulse 2s linear infinite;
+}
+
+.song1-div {
+  position: absolute;
+  border: 3px solid white;
+  height: 50px;
+  margin-left: 240px;
+  margin-top: 400px;
+  width: 630px;
+}
+
+.song1-div h1 {
+  color: white;
+  font-size: 28px;
+  position: absolute;
+  margin-left: 90px;
+  margin-top: -38px;
+}
+
+.song1-div h2 {
+  color: white;
+  font-size: 28px;
+  position: absolute;
+  margin-left: 180px;
+  margin-top: -36px;
+}
+
+.song1-div h3 {
+  color: white;
+  font-size: 21px;
+  position: absolute;
+  margin-left: 500px;
+  margin-top: -30px;
+}
+
+.song2-div {
+  position: absolute;
+  border: 3px solid white;
+  height: 50px;
+  margin-left: 240px;
+  margin-top: 460px;
+  width: 630px;
+}
+
+.song2-div h1 {
+  color: white;
+  font-size: 28px;
+  position: absolute;
+  margin-left: 90px;
+  margin-top: -38px;
+}
+
+.song2-div h2 {
+  color: white;
+  font-size: 28px;
+  position: absolute;
+  margin-left: 200px;
+  margin-top: -36px;
+}
+
+.song2-div h3 {
+  color: white;
+  font-size: 21px;
+  position: absolute;
+  margin-left: 500px;
+  margin-top: -30px;
+}
+
+.song3-div {
+  position: absolute;
+  border: 3px solid white;
+  height: 50px;
+  margin-left: 240px;
+  margin-top: 520px;
+  width: 630px;
+}
+
+.song3-div h1 {
+  color: white;
+  font-size: 28px;
+  position: absolute;
+  margin-left: 90px;
+  margin-top: -38px;
+}
+
+.song3-div h2 {
+  color: white;
+  font-size: 28px;
+  position: absolute;
+  margin-left: 200px;
+  margin-top: -36px;
+}
+
+.song3-div h3 {
+  color: white;
+  font-size: 21px;
+  position: absolute;
+  margin-left: 500px;
+  margin-top: -30px;
+}
+
+.song4-div {
+  position: absolute;
+  border: 3px solid white;
+  height: 50px;
+  margin-left: 240px;
+  margin-top: 580px;
+  width: 630px;
+}
+
+.song4-div h1 {
+  color: white;
+  font-size: 28px;
+  position: absolute;
+  margin-left: 90px;
+  margin-top: -38px;
+}
+
+.song4-div h2 {
+  color: white;
+  font-size: 28px;
+  position: absolute;
+  margin-left: 200px;
+  margin-top: -36px;
+}
+
+.song4-div h3 {
+  color: white;
+  font-size: 21px;
+  position: absolute;
+  margin-left: 500px;
+  margin-top: -30px;
+}
+
+.song5-div {
+  position: absolute;
+  border: 3px solid white;
+  height: 50px;
+  margin-left: 240px;
+  margin-top: 640px;
+  width: 630px;
+}
+
+.song5-div h1 {
+  color: white;
+  font-size: 28px;
+  position: absolute;
+  margin-left: 90px;
+  margin-top: -38px;
+}
+
+.song5-div h2 {
+  color: white;
+  font-size: 28px;
+  position: absolute;
+  margin-left: 200px;
+  margin-top: -36px;
+}
+
+.song5-div h3 {
+  color: white;
+  font-size: 21px;
+  position: absolute;
+  margin-left: 500px;
+  margin-top: -30px;
+}
+
+.song6-div {
+  position: absolute;
+  border: 3px solid white;
+  height: 50px;
+  margin-left: 240px;
+  margin-top: 700px;
+  width: 630px;
+}
+
+.song6-div h1 {
+  color: white;
+  font-size: 28px;
+  position: absolute;
+  margin-left: 90px;
+  margin-top: -38px;
+}
+
+.song6-div h2 {
+  color: white;
+  font-size: 28px;
+  position: absolute;
+  margin-left: 200px;
+  margin-top: -36px;
+}
+
+.song6-div h3 {
+  color: white;
+  font-size: 21px;
+  position: absolute;
+  margin-left: 500px;
+  margin-top: -30px;
+}
+
+.song7-div {
+  position: absolute;
+  border: 3px solid white;
+  height: 50px;
+  margin-left: 240px;
+  margin-top: 760px;
+  width: 630px;
+}
+
+.song7-div h1 {
+  color: white;
+  font-size: 28px;
+  position: absolute;
+  margin-left: 90px;
+  margin-top: -38px;
+}
+
+.song7-div h2 {
+  color: white;
+  font-size: 28px;
+  position: absolute;
+  margin-left: 200px;
+  margin-top: -36px;
+}
+
+.song7-div h3 {
+  color: white;
+  font-size: 21px;
+  position: absolute;
+  margin-left: 500px;
+  margin-top: -30px;
+}
+
+.play3-btn {
+  margin-left: 20px;
+  height: 50px;
+  width: 50px;
+  position: absolute;
+}
+
+.play3-btn {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgb(0, 0, 0);
+  cursor: pointer;
+}
+
+.play3-btn span {
+  position: absolute;
+  top: 45%;
+  left: 30%;
+  transform: translatey(-50%);
+  width: 5px;
+  height: 15px;
+  border-radius: 2px;
+  background-color: rgb(255, 255, 255);
+  transition: 0.5s;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+.play3-btn span:nth-child(2) {
+  left: 55%;
+  transform-origin: center;
+}
+
+.play3-btn.pause span:nth-child(2) {
+  transform: translateY(-50%) scaleY(0);
+}
+
+.play3-btn.pause span:nth-child(1) {
+  width: 35%;
+  left: 53%;
+  transform: translate(-50%, -50%);
+  border-radius: 0;
+  clip-path: polygon(0 0, 100% 50%, 100% 50%, 0% 100%);
+}
+
+.play3-btn.pause {
+  animation: pulse 2s linear infinite;
+}
+
+.play4-btn {
+  position: relative;
+  left: 20px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgb(0, 0, 0);
+  cursor: pointer;
+}
+
+.play4-btn span {
+  position: absolute;
+  top: 45%;
+  left: 30%;
+  transform: translatey(-50%);
+  width: 5px;
+  height: 15px;
+  border-radius: 2px;
+  background-color: rgb(255, 255, 255);
+  transition: 0.5s;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+.play4-btn span:nth-child(2) {
+  left: 55%;
+  transform-origin: center;
+}
+
+.play4-btn.pause span:nth-child(2) {
+  transform: translateY(-50%) scaleY(0);
+}
+
+.play4-btn.pause span:nth-child(1) {
+  width: 35%;
+  left: 53%;
+  transform: translate(-50%, -50%);
+  border-radius: 0;
+  clip-path: polygon(0 0, 100% 50%, 100% 50%, 0% 100%);
+}
+
+.play4-btn.pause {
+  animation: pulse 2s linear infinite;
+}
+
+.play5-btn {
+  position: relative;
+  left: 20px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgb(0, 0, 0);
+  cursor: pointer;
+}
+
+.play5-btn span {
+  position: absolute;
+  top: 45%;
+  left: 30%;
+  transform: translatey(-50%);
+  width: 5px;
+  height: 15px;
+  border-radius: 2px;
+  background-color: rgb(255, 255, 255);
+  transition: 0.5s;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+.play5-btn span:nth-child(2) {
+  left: 55%;
+  transform-origin: center;
+}
+
+.play5-btn.pause span:nth-child(2) {
+  transform: translateY(-50%) scaleY(0);
+}
+
+.play5-btn.pause span:nth-child(1) {
+  width: 35%;
+  left: 53%;
+  transform: translate(-50%, -50%);
+  border-radius: 0;
+  clip-path: polygon(0 0, 100% 50%, 100% 50%, 0% 100%);
+}
+
+.play5-btn.pause {
+  animation: pulse 2s linear infinite;
+}
+
+.play6-btn {
+  position: relative;
+  left: 20px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgb(0, 0, 0);
+  cursor: pointer;
+}
+
+.play6-btn span {
+  position: absolute;
+  top: 45%;
+  left: 30%;
+  transform: translatey(-50%);
+  width: 5px;
+  height: 15px;
+  border-radius: 2px;
+  background-color: rgb(255, 255, 255);
+  transition: 0.5s;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+.play6-btn span:nth-child(2) {
+  left: 55%;
+  transform-origin: center;
+}
+
+.play6-btn.pause span:nth-child(2) {
+  transform: translateY(-50%) scaleY(0);
+}
+
+.play6-btn.pause span:nth-child(1) {
+  width: 35%;
+  left: 53%;
+  transform: translate(-50%, -50%);
+  border-radius: 0;
+  clip-path: polygon(0 0, 100% 50%, 100% 50%, 0% 100%);
+}
+
+.play6-btn.pause {
+  animation: pulse 2s linear infinite;
+}
+
+.play7-btn {
+  position: relative;
+  left: 20px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgb(0, 0, 0);
+  cursor: pointer;
+}
+
+.play7-btn span {
+  position: absolute;
+  top: 45%;
+  left: 30%;
+  transform: translatey(-50%);
+  width: 5px;
+  height: 15px;
+  border-radius: 2px;
+  background-color: rgb(255, 255, 255);
+  transition: 0.5s;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+.play7-btn span:nth-child(2) {
+  left: 55%;
+  transform-origin: center;
+}
+
+.play7-btn.pause span:nth-child(2) {
+  transform: translateY(-50%) scaleY(0);
+}
+
+.play7-btn.pause span:nth-child(1) {
+  width: 35%;
+  left: 53%;
+  transform: translate(-50%, -50%);
+  border-radius: 0;
+  clip-path: polygon(0 0, 100% 50%, 100% 50%, 0% 100%);
+}
+
+.play7-btn.pause {
+  animation: pulse 2s linear infinite;
+}
+
+.play8-btn {
+  position: relative;
+  left: 20px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgb(0, 0, 0);
+  cursor: pointer;
+}
+
+.play8-btn span {
+  position: absolute;
+  top: 45%;
+  left: 30%;
+  transform: translatey(-50%);
+  width: 5px;
+  height: 15px;
+  border-radius: 2px;
+  background-color: rgb(255, 255, 255);
+  transition: 0.5s;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+.play8-btn span:nth-child(2) {
+  left: 55%;
+  transform-origin: center;
+}
+
+.play8-btn.pause span:nth-child(2) {
+  transform: translateY(-50%) scaleY(0);
+}
+
+.play8-btn.pause span:nth-child(1) {
+  width: 35%;
+  left: 53%;
+  transform: translate(-50%, -50%);
+  border-radius: 0;
+  clip-path: polygon(0 0, 100% 50%, 100% 50%, 0% 100%);
+}
+
+.play8-btn.pause {
+  animation: pulse 2s linear infinite;
 }
